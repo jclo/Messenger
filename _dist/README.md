@@ -1,4 +1,4 @@
-Messenger# Messenger
+# Messenger
 
 [![NPM version][npm-image]][npm-url]
 [![Travis CI][travis-image]][travis-url]
@@ -17,16 +17,13 @@ Messenger# Messenger
 
 ```js
 
-// Creates the messenger object:
-var mess = Messenger('mycustomevent');
-
 // Listens for an event:
-mess.on('mycustomevent', function(payload) {
+mess.subscribe('mycustomevent', function(payload) {
   console.log('fired mycustomevent: ' + payload);
 });
 
 // Fires an event:
-mess.fire('mycustomevent', 'this is the payload for mycustomevent');
+mess.publish('mycustomevent', 'this is the payload for mycustomevent');
 ```
 
 
@@ -50,20 +47,17 @@ Messenger.noConflict();
 
 | Constructor | Description |
 |:------------|:------------|
-| Messenger('messagename') | creates the Messenger object that handles 'messagename' messages, |
+| Messenger() | creates the Messenger object that handles messages, |
 
 
 ## Methods
 
 | Methods  | Description |
 |:--------------------|:------------|
-| addEvents           | adds events/messages, |
-| addEventListener    | adds an event listener, |
-| removeEventListener | removes an event listener, |
-| fire                | fires an event/message, |
-| on                  | alias on addEventListener, |
-| off                 | alias on removeEventListener, |
-| trigger             | alias on fire, |
+| subscribe           | adds an event listener, |
+| subscribeOnce       | adds an event listener that is fired once, |
+| unsubscribe         | removes an event listener, |
+| publish             | fires an event/message, |
 
 
 ## License

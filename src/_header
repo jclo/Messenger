@@ -1,4 +1,4 @@
-// Based on ES6.lib template v0.0.2
+// Based on ES6.lib template v0.0.4
 // ESLint declarations
 /* global define */
 /* eslint strict: ["error", "function"] */
@@ -32,6 +32,6 @@
   // const TM
   /* eslint-disable one-var, semi-style */
   let Messenger
-    , extend
+    , TM
     ;
   /* eslint-enable one-var, semi-style */

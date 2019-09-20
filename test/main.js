@@ -11,7 +11,6 @@
 const Messenger  = require('../index.js')
     , constructor = require('./int/constructor.js')
     , methods     = require('./int/methods.js')
-    , addEvents   = require('./int/addevents.js')
     , addandfire  = require('./int/addandfire.js')
     ;
 
@@ -21,11 +20,9 @@ const Messenger  = require('../index.js')
 
 // -- Local variables
 
-
 // -- Main
 describe('Test Messenger:', () => {
   constructor(Messenger);
   methods(Messenger);
-  addEvents(Messenger);
   addandfire(Messenger);
 });

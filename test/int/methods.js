@@ -27,76 +27,20 @@ module.exports = function(Messenger) {
       expect(o).to.be.an('object');
     });
 
-    it('Expects this object to own the property "addEvents" that is a function.', () => {
-      expect(o).to.have.property('addEvents').that.is.a('function');
+    it('Expects this object to own the property "subscribe" that is a function.', () => {
+      expect(o).to.have.property('subscribe').that.is.a('function');
     });
 
-    it('Expects this object to own the property "addStreamEvents" that is a function.', () => {
-      expect(o).to.have.property('addStreamEvents').that.is.a('function');
+    it('Expects this object to own the property "subscribeOnce" that is a function.', () => {
+      expect(o).to.have.property('subscribeOnce').that.is.a('function');
     });
 
-    it('Expects this object to own the property "fire" that is a function.', () => {
-      expect(o).to.have.property('fire').that.is.a('function');
+    it('Expects this object to own the property "unsubscribe" that is a function.', () => {
+      expect(o).to.have.property('unsubscribe').that.is.a('function');
     });
 
-    it('Expects this object to own the property "trigger" that is a function.', () => {
-      expect(o).to.have.property('trigger').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "addEventListener" that is a function.', () => {
-      expect(o).to.have.property('addEventListener').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "addOneTimeEventListener" that is a function.', () => {
-      expect(o).to.have.property('addOneTimeEventListener').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "removeEventListener" that is a function.', () => {
-      expect(o).to.have.property('removeEventListener').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "on" that is a function.', () => {
-      expect(o).to.have.property('on').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "one" that is a function.', () => {
-      expect(o).to.have.property('one').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "off" that is a function.', () => {
-      expect(o).to.have.property('off').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "fireQActive" that is a function.', () => {
-      expect(o).to.have.property('fireQActive').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "fireQ" that is a function.', () => {
-      expect(o).to.have.property('fireQ').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "fireQL" that is a function.', () => {
-      expect(o).to.have.property('fireQL').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "addEventStreamListener" that is a function.', () => {
-      expect(o).to.have.property('addEventStreamListener').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "addEventStreamListenerLast" that is a function.', () => {
-      expect(o).to.have.property('addEventStreamListenerLast').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "q" that is a function.', () => {
-      expect(o).to.have.property('q').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "ql" that is a function.', () => {
-      expect(o).to.have.property('ql').that.is.a('function');
-    });
-
-    it('Expects this object to own the property "setOpen" that is a function.', () => {
-      expect(o).to.have.property('setOpen').that.is.a('function');
+    it('Expects this object to own the property "publish" that is a function.', () => {
+      expect(o).to.have.property('publish').that.is.a('function');
     });
   });
 };

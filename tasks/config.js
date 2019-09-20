@@ -9,19 +9,15 @@ module.exports = {
   parent: 'this',
   noparent: '-noparent',
   index: './index.js',
-  // These are the Javascript files required to build the library. Choose one
-  // pattern among these ones.
+  // These are the Javascript files required to build the library.
   /* eslint-disable no-multi-spaces */
   src: [
-    // These three files (_header, tree.js and extend.js) must be declared in
-    // this order as they create the umd module, define the object tree and
-    // the function to fill the tree!
+    // The file _header must be declared the first because it creates the head
+    // of the umd module.
     './src/_header',
-    './src/tree.js',
-    './src/lib/extend.js',
 
-    './src/util/jm.js',
     './src/messenger.js',
+    './src/private/messenger.js',
 
     // This file must always be the last one as it closes the umd module.
     './src/_footer',
