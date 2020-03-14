@@ -4,7 +4,7 @@
 
   * Updated the dependency packages,
   * Removed the package gulp-footer as it has major vulnerabilities not fixed,
-  * ...,
+  * Release.
 
 
 ### 0.0.1 (September 20, 2019)
