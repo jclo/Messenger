@@ -1,8 +1,8 @@
 {
-  "name": "@mobilabs/messenger",
-  "version": "0.0.3",
+  "name": "messenger",
+  "version": "0.0.4-beta.1",
   "description": "A tiny Javascript library to handle messages that carry a payload",
-  "main": "index.js",
+  "main": "_dist/lib/messenger.js",
   "bin": {},
   "scripts": {
     "build": "gulp build",

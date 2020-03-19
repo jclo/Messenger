@@ -35,7 +35,7 @@
 'use strict';
 
 (function() {
-  // IIFE
+  // START OF IIFE
 
   // -- Module path
 
@@ -260,5 +260,7 @@
       _publish(db, event, payload);
     },
   };
+
+  // END OF IIFE
 }());
 /* eslint-enable one-var, semi-style, no-underscore-dangle */

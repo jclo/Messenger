@@ -4,10 +4,10 @@
 
 'use strict';
 
-// -- Node modules
+// -- Vendor Modules
 
 
-// -- Local modules
+// -- Local Modules
 const Messenger  = require('../index.js')
     , constructor = require('./int/constructor.js')
     , methods     = require('./int/methods.js')
@@ -15,10 +15,10 @@ const Messenger  = require('../index.js')
     ;
 
 
-// -- Local constants
+// -- Local Constants
 
 
-// -- Local variables
+// -- Local Variables
 
 // -- Main
 describe('Test Messenger:', () => {

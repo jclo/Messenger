@@ -1,15 +1,15 @@
-/** ****************************************************************************
- * Messenger v0.0.3
+/*! ****************************************************************************
+ * Messenger v0.0.4-beta.1
  *
  * A tiny Javascript library to handle messages that carry a payload.
  * (you can download it from npm or github repositories)
  * Copyright (c) 2020 Mobilabs <contact@mobilabs.fr> (http://www.mobilabs.fr).
  * Released under the MIT license. You may obtain a copy of the License
  * at: http://www.opensource.org/licenses/mit-license.php).
- * Built from ES6lib v0.0.10.
+ * Built from ES6lib v0.0.12-beta.1.
  * ************************************************************************** */
 // ESLint declarations
-/* global */
+/* global define */
 /* eslint strict: ["error", "function"] */
 (function(root, factory) {
   /* istanbul ignore next */
@@ -80,7 +80,7 @@
   /* eslint-disable one-var, semi-style, no-underscore-dangle */
 
   (function() {
-    // IIFE
+    // START OF IIFE
 
     // -- Module path
 
@@ -120,7 +120,7 @@
     };
 
     // Attaches a constant to ESLib that provides the version of the lib.
-    Messenger.VERSION = '0.0.3';
+    Messenger.VERSION = '0.0.4-beta.1';
 
 
     // -- Public Static Methods ------------------------------------------------
@@ -210,6 +210,8 @@
         return this;
       },
     };
+
+    // END OF IIFE
   }());
   /* eslint-enable one-var, semi-style, no-underscore-dangle */
 
@@ -248,7 +250,7 @@
   /* eslint-disable one-var, semi-style, no-underscore-dangle */
 
   (function() {
-    // IIFE
+    // START OF IIFE
 
     // -- Module path
 
@@ -473,6 +475,8 @@
         _publish(db, event, payload);
       },
     };
+
+    // END OF IIFE
   }());
   /* eslint-enable one-var, semi-style, no-underscore-dangle */
 

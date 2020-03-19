@@ -4,18 +4,18 @@
 
 'use strict';
 
-// -- Node modules
+// -- Vendor Modules
 const { expect } = require('chai')
     ;
 
 
-// -- Local modules
+// -- Local Modules
 
 
-// -- Local constants
+// -- Local Constants
 
 
-// -- Local variables
+// -- Local Variables
 
 
 // -- Main
