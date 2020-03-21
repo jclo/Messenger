@@ -1,5 +1,5 @@
 /*! ****************************************************************************
- * Messenger v0.0.4-beta.1
+ * Messenger v0.0.4
  *
  * A tiny Javascript library to handle messages that carry a payload.
  * (you can download it from npm or github repositories)
@@ -120,7 +120,7 @@
     };
 
     // Attaches a constant to ESLib that provides the version of the lib.
-    Messenger.VERSION = '0.0.4-beta.1';
+    Messenger.VERSION = '0.0.4';
 
 
     // -- Public Static Methods ------------------------------------------------

@@ -1,8 +1,9 @@
 ### HEAD
 
-### 0.0.4 (March 19, 2020)
+### 0.0.4 (March 21, 2020)
 
   * Updated the project with the boilerplate ES6lib 0.012,
+  * Fixed the empty README,
   * ...,
 
 

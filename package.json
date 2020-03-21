@@ -1,6 +1,6 @@
 {
-  "name": "messenger",
-  "version": "0.0.4-beta.1",
+  "name": "@mobilabs/messenger",
+  "version": "0.0.4",
   "description": "A tiny Javascript library to handle messages that carry a payload",
   "main": "_dist/lib/messenger.js",
   "bin": {},
