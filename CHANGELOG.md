@@ -4,7 +4,7 @@
 
   * Updated the project with the boilerplate ES6lib 0.012,
   * Fixed the empty README,
-  * ...,
+  * Release.
 
 
 ### 0.0.3 (March 17, 2020)
