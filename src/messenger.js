@@ -1,4 +1,4 @@
-/* ***************************************************************************
+/** **************************************************************************
  *
  * Defines the Messenger library.
  *
@@ -26,13 +26,14 @@
  *
  *
  *
- * @namespace    Messenger
+ * @namespace    -
  * @dependencies none
  * @exports      -
  * @author       -
  * @since        0.0.0
  * @version      -
  * ************************************************************************ */
+/* global TM, root */
 /* eslint-disable one-var, semi-style, no-underscore-dangle */
 
 'use strict';
@@ -40,20 +41,21 @@
 (function() {
   // START OF IIFE
 
-  // -- Module path
+
+  // -- Module Path
 
 
-  // -- Local modules
+  // -- Local Modules
 
 
-  // -- Local constants
+  // -- Local Constants
   // Saves the previous value of the library variable, so that it can be
   // restored later on, if noConflict is used.
   const previousMessenger = root.Messenger
       ;
 
 
-  // -- Local variables
+  // -- Local Variables
   let methods
     ;
 
@@ -64,7 +66,7 @@
    * Returns the Messenger object.
    * (Prototypal Instantiation Pattern)
    *
-   * @constructor (arg1)
+   * @constructor ()
    * @public
    * @param {}              -,
    * @returns {Object}      returns the Messenger object,
@@ -77,7 +79,7 @@
     return obj;
   };
 
-  // Attaches a constant to ESLib that provides the version of the lib.
+  // Attaches a constant to Messenger that provides the version of the lib.
   Messenger.VERSION = '{{lib:version}}';
 
 
@@ -87,13 +89,13 @@
    * Returns a reference to this Messenger object.
    *
    * Nota:
-   * Running Messenger in noConflic mode, returns the Messenger variable to its
-   _ previous owner.
+   * Running Messenger in noConflict mode, returns the Messenger variable to its
+   * _ previous owner.
    *
    * @method ()
    * @public
    * @param {}              -,
-   * @returns {String}      returns the Messenger object,
+   * @returns {Object}      returns the Messenger object,
    * @since 0.0.0
    */
   /* istanbul ignore next */

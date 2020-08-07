@@ -1,4 +1,4 @@
-/* ***************************************************************************
+/** **************************************************************************
  *
  * Implements the Messenger methods.
  *
@@ -15,6 +15,10 @@
  *  . _subscribe                  adds an event listener,
  *
  *
+ * Private Static Methods:
+ *  . none,
+ *
+ *
  * Public Static Methods:
  *  . subscribe                   adds an event listener,
  *  . subscribeOnce               adds an event listener that is fired once,
@@ -23,7 +27,7 @@
  *
  *
  *
- * @namespace    Messenger.TM
+ * @namespace    -
  * @dependencies none
  * @exports      -
  * @author       -
@@ -37,16 +41,17 @@
 (function() {
   // START OF IIFE
 
-  // -- Module path
+
+  // -- Module Path
 
 
-  // -- Local modules
+  // -- Local Modules
 
 
-  // -- Local constants
+  // -- Local Constants
 
 
-  // -- Local variables
+  // -- Local Variables
 
 
   // -- Private Functions ----------------------------------------------------

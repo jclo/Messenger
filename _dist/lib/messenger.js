@@ -1,12 +1,12 @@
 /*! ****************************************************************************
- * Messenger v0.0.4
+ * Messenger v0.0.5
  *
  * A tiny Javascript library to handle messages that carry a payload.
  * (you can download it from npm or github repositories)
  * Copyright (c) 2020 Mobilabs <contact@mobilabs.fr> (http://www.mobilabs.fr).
  * Released under the MIT license. You may obtain a copy of the License
  * at: http://www.opensource.org/licenses/mit-license.php).
- * Built from ES6lib v0.0.12-beta.1.
+ * Built from ES6lib v1.0.0-beta.7.
  * ************************************************************************** */
 // ESLint declarations
 /* global define */
@@ -24,10 +24,6 @@
     // like Node.
     /* eslint-disable-next-line no-param-reassign */
     module.exports = factory(root);
-    // This is a hack to attach the lib to the browser root when this lib is
-    // included inside another lib and the whole is browserifyied:
-    /* eslint-disable no-param-reassign */
-    if (root.Messenger === null) root.Messenger = factory(root);
   } else {
     // Browser globals.
     /* eslint-disable-next-line no-param-reassign */
@@ -36,17 +32,20 @@
 }(this, (root) => {
   'use strict';
 
-  // This is the list of the constants that are defined at the global level of
-  // this module and are accessible to all. So, they are considered as reserved
-  // words for this library.
-  // const TM
-  /* eslint-disable one-var, semi-style */
+  /** **************************************************************************
+   * _head provides the list of the constants that are defined at the global
+   * level of this module and are accessible to all. So, they are considered
+   * as reserved words for this library.
+   * ************************************************************************ */
+  /* eslint-disable one-var, no-unused-vars, semi-style */
+
   let Messenger
     , TM
     ;
-  /* eslint-enable one-var, semi-style */
 
-  /* ***************************************************************************
+  /* eslint-enable one-var, no-unused-vars, semi-style */
+
+  /** **************************************************************************
    *
    * Defines the Messenger library.
    *
@@ -74,32 +73,34 @@
    *
    *
    *
-   * @namespace    Messenger
+   * @namespace    -
    * @dependencies none
    * @exports      -
    * @author       -
    * @since        0.0.0
    * @version      -
    * ************************************************************************ */
+  /* - */
   /* eslint-disable one-var, semi-style, no-underscore-dangle */
 
   (function() {
     // START OF IIFE
 
-    // -- Module path
+
+    // -- Module Path
 
 
-    // -- Local modules
+    // -- Local Modules
 
 
-    // -- Local constants
+    // -- Local Constants
     // Saves the previous value of the library variable, so that it can be
     // restored later on, if noConflict is used.
     const previousMessenger = root.Messenger
         ;
 
 
-    // -- Local variables
+    // -- Local Variables
     let methods
       ;
 
@@ -110,7 +111,7 @@
      * Returns the Messenger object.
      * (Prototypal Instantiation Pattern)
      *
-     * @constructor (arg1)
+     * @constructor ()
      * @public
      * @param {}              -,
      * @returns {Object}      returns the Messenger object,
@@ -123,8 +124,8 @@
       return obj;
     };
 
-    // Attaches a constant to ESLib that provides the version of the lib.
-    Messenger.VERSION = '0.0.4';
+    // Attaches a constant to Messenger that provides the version of the lib.
+    Messenger.VERSION = '0.0.5';
 
 
     // -- Public Static Methods ------------------------------------------------
@@ -133,13 +134,13 @@
      * Returns a reference to this Messenger object.
      *
      * Nota:
-     * Running Messenger in noConflic mode, returns the Messenger variable to its
-     _ previous owner.
+     * Running Messenger in noConflict mode, returns the Messenger variable to its
+     * _ previous owner.
      *
      * @method ()
      * @public
      * @param {}              -,
-     * @returns {String}      returns the Messenger object,
+     * @returns {Object}      returns the Messenger object,
      * @since 0.0.0
      */
     /* istanbul ignore next */
@@ -219,7 +220,7 @@
   }());
   /* eslint-enable one-var, semi-style, no-underscore-dangle */
 
-  /* ***************************************************************************
+  /** **************************************************************************
    *
    * Implements the Messenger methods.
    *
@@ -236,6 +237,10 @@
    *  . _subscribe                  adds an event listener,
    *
    *
+   * Private Static Methods:
+   *  . none,
+   *
+   *
    * Public Static Methods:
    *  . subscribe                   adds an event listener,
    *  . subscribeOnce               adds an event listener that is fired once,
@@ -244,7 +249,7 @@
    *
    *
    *
-   * @namespace    Messenger.TM
+   * @namespace    -
    * @dependencies none
    * @exports      -
    * @author       -
@@ -256,16 +261,17 @@
   (function() {
     // START OF IIFE
 
-    // -- Module path
+
+    // -- Module Path
 
 
-    // -- Local modules
+    // -- Local Modules
 
 
-    // -- Local constants
+    // -- Local Constants
 
 
-    // -- Local variables
+    // -- Local Variables
 
 
     // -- Private Functions ----------------------------------------------------

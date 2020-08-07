@@ -1,3 +1,4 @@
   // Returns the library name:
   return Messenger;
 }));
+{{lib:es6:export}}
