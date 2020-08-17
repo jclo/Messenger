@@ -25,6 +25,10 @@ module.exports = function(Messenger) {
       expect(Messenger).to.be.a('function');
     });
 
+    it('Expects Messenger.NAME to return the string "Messenger".', () => {
+      expect(Messenger.NAME).to.be.a('string').that.is.equal('Messenger');
+    });
+
     it('Expects Messenger.VERSION to return a string.', () => {
       expect(Messenger.VERSION).to.be.a('string');
     });

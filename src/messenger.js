@@ -74,12 +74,18 @@
    */
   Messenger = function() {
     const obj = Object.create(methods);
+    obj.library = {
+      name: '{{lib:name}}',
+      version: '{{lib:version}}',
+    };
     // Initializes the message database to empty:
     obj._db = {};
     return obj;
   };
 
-  // Attaches a constant to Messenger that provides the version of the lib.
+  // Attaches constants to Messenger that provide the name and the
+  // version of the lib.
+  Messenger.NAME = '{{lib:name}}';
   Messenger.VERSION = '{{lib:version}}';
 
 

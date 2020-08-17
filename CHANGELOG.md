@@ -1,5 +1,11 @@
 ### HEAD
 
+### 0.0.6 (August 17, 2020)
+
+  * Added an identification tag to the library,
+  * ...,
+
+
 ### 0.0.5 (August 7, 2020)
 
   * Updated the project template,

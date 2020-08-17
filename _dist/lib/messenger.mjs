@@ -1,5 +1,5 @@
 /*! ****************************************************************************
- * Messenger v0.0.5
+ * Messenger v0.0.6
  *
  * A tiny Javascript library to handle messages that carry a payload.
  * (you can download it from npm or github repositories)
@@ -120,13 +120,19 @@ const $__ES6GLOB = {};
      */
     Messenger = function() {
       const obj = Object.create(methods);
+      obj.library = {
+        name: 'Messenger',
+        version: '0.0.6',
+      };
       // Initializes the message database to empty:
       obj._db = {};
       return obj;
     };
 
-    // Attaches a constant to Messenger that provides the version of the lib.
-    Messenger.VERSION = '0.0.5';
+    // Attaches constants to Messenger that provide the name and the
+    // version of the lib.
+    Messenger.NAME = 'Messenger';
+    Messenger.VERSION = '0.0.6';
 
 
     // -- Public Static Methods ------------------------------------------------
