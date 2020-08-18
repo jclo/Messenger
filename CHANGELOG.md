@@ -4,7 +4,7 @@
 
   * Added the method whoami,
   * Added the missing test files,
-  * ...,
+  * Release.
 
 
 ### 0.0.6 (August 17, 2020)
