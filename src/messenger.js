@@ -14,11 +14,16 @@
  *  . Messenger                   creates and returns the Messenger object,
  *
  *
+ * Private Static Methods:
+ *  . _setTestMode                returns internal objects for testing purpose,
+ *
+ *
  * Public Static Methods:
  *  . noConflict                  returns a reference to this Messenger object,
  *
  *
  * Public Methods:
+ *  . whoami                      returns the library name and version,
  *  . subscribe                   adds an event listener,
  *  . subscribeOnce               adds an event listener that is fired once,
  *  . unsubscribe                 removes an event listener,
@@ -74,7 +79,7 @@
    */
   Messenger = function() {
     const obj = Object.create(methods);
-    obj.library = {
+    obj._library = {
       name: '{{lib:name}}',
       version: '{{lib:version}}',
     };
@@ -83,16 +88,33 @@
     return obj;
   };
 
-  // Attaches constants to Messenger that provide the name and the
-  // version of the lib.
+  // Attaches constants to Messenger that provide name and version of the lib.
   Messenger.NAME = '{{lib:name}}';
   Messenger.VERSION = '{{lib:version}}';
+
+
+  // -- Private Static Methods -----------------------------------------------
+
+  /**
+   * Returns the internal objects for testing purpose.
+   * (must not be deleted)
+   *
+   * @method ()
+   * @private
+   * @param {}              -,
+   * @returns {Object}      returns a list of internal objects,
+   * @since 0.0.0
+   */
+  Messenger._setTestMode = function() {
+    return [];
+  };
 
 
   // -- Public Static Methods ------------------------------------------------
 
   /**
    * Returns a reference to this Messenger object.
+   * (must not be deleted)
    *
    * Nota:
    * Running Messenger in noConflict mode, returns the Messenger variable to its
@@ -104,7 +126,6 @@
    * @returns {Object}      returns the Messenger object,
    * @since 0.0.0
    */
-  /* istanbul ignore next */
   Messenger.noConflict = function() {
     /* eslint-disable-next-line no-param-reassign */
     root.Messenger = previousMessenger;
@@ -117,15 +138,29 @@
   methods = {
 
     /**
-    * Adds an event listener.
-    *
-    * @method (arg1, arg2)
-    * @public
-    * @param {String}      the event,
-    * @param {Function}    the event handler,
-    * @returns {Object}    returns this,
-    * @since 0.0.0
-    */
+     * Returns the library name and version.
+     * (must not be deleted)
+     *
+     * @method ()
+     * @public
+     * @param {}            -,
+     * @returns {Object}    returns the library name and version,
+     * @since 0.0.0
+     */
+    whoami() {
+      return this._library;
+    },
+
+    /**
+     * Adds an event listener.
+     *
+     * @method (arg1, arg2)
+     * @public
+     * @param {String}      the event,
+     * @param {Function}    the event handler,
+     * @returns {Object}    returns this,
+     * @since 0.0.0
+     */
     subscribe(event, listener) {
       TM.subscribe(this._db, event, listener);
       return this;

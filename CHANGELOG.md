@@ -1,5 +1,11 @@
 ### HEAD
 
+### 0.0.7 (August 18, 2020)
+
+  * Added the method whoami,
+  * ...,
+
+
 ### 0.0.6 (August 17, 2020)
 
   * Added an identification tag to the library,

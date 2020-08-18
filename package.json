@@ -1,6 +1,6 @@
 {
   "name": "@mobilabs/messenger",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A tiny Javascript library to handle messages that carry a payload",
   "main": "_dist/lib/messenger.js",
   "minified": "_dist/lib/messenger.min.js",
@@ -45,7 +45,7 @@
     "coveralls": "^3.1.0",
     "cross-env": "^7.0.2",
     "del": "^5.1.0",
-    "eslint": "^7.6.0",
+    "eslint": "^7.7.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "gulp": "^4.0.2",

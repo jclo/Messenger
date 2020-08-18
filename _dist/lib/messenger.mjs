@@ -1,12 +1,12 @@
 /*! ****************************************************************************
- * Messenger v0.0.6
+ * Messenger v0.0.7
  *
  * A tiny Javascript library to handle messages that carry a payload.
  * (you can download it from npm or github repositories)
  * Copyright (c) 2020 Mobilabs <contact@mobilabs.fr> (http://www.mobilabs.fr).
  * Released under the MIT license. You may obtain a copy of the License
  * at: http://www.opensource.org/licenses/mit-license.php).
- * Built from ES6lib v1.0.0-beta.7.
+ * Built from ES6lib v1.0.0-beta.8.
  * ************************************************************************** */
 // ESLint declarations
 /* global define */
@@ -62,11 +62,16 @@ const $__ES6GLOB = {};
    *  . Messenger                   creates and returns the Messenger object,
    *
    *
+   * Private Static Methods:
+   *  . _setTestMode                returns internal objects for testing purpose,
+   *
+   *
    * Public Static Methods:
    *  . noConflict                  returns a reference to this Messenger object,
    *
    *
    * Public Methods:
+   *  . whoami                      returns the library name and version,
    *  . subscribe                   adds an event listener,
    *  . subscribeOnce               adds an event listener that is fired once,
    *  . unsubscribe                 removes an event listener,
@@ -120,25 +125,42 @@ const $__ES6GLOB = {};
      */
     Messenger = function() {
       const obj = Object.create(methods);
-      obj.library = {
+      obj._library = {
         name: 'Messenger',
-        version: '0.0.6',
+        version: '0.0.7',
       };
       // Initializes the message database to empty:
       obj._db = {};
       return obj;
     };
 
-    // Attaches constants to Messenger that provide the name and the
-    // version of the lib.
+    // Attaches constants to Messenger that provide name and version of the lib.
     Messenger.NAME = 'Messenger';
-    Messenger.VERSION = '0.0.6';
+    Messenger.VERSION = '0.0.7';
+
+
+    // -- Private Static Methods -----------------------------------------------
+
+    /**
+     * Returns the internal objects for testing purpose.
+     * (must not be deleted)
+     *
+     * @method ()
+     * @private
+     * @param {}              -,
+     * @returns {Object}      returns a list of internal objects,
+     * @since 0.0.0
+     */
+    Messenger._setTestMode = function() {
+      return [];
+    };
 
 
     // -- Public Static Methods ------------------------------------------------
 
     /**
      * Returns a reference to this Messenger object.
+     * (must not be deleted)
      *
      * Nota:
      * Running Messenger in noConflict mode, returns the Messenger variable to its
@@ -150,7 +172,6 @@ const $__ES6GLOB = {};
      * @returns {Object}      returns the Messenger object,
      * @since 0.0.0
      */
-    /* istanbul ignore next */
     Messenger.noConflict = function() {
       /* eslint-disable-next-line no-param-reassign */
       root.Messenger = previousMessenger;
@@ -163,15 +184,29 @@ const $__ES6GLOB = {};
     methods = {
 
       /**
-      * Adds an event listener.
-      *
-      * @method (arg1, arg2)
-      * @public
-      * @param {String}      the event,
-      * @param {Function}    the event handler,
-      * @returns {Object}    returns this,
-      * @since 0.0.0
-      */
+       * Returns the library name and version.
+       * (must not be deleted)
+       *
+       * @method ()
+       * @public
+       * @param {}            -,
+       * @returns {Object}    returns the library name and version,
+       * @since 0.0.0
+       */
+      whoami() {
+        return this._library;
+      },
+
+      /**
+       * Adds an event listener.
+       *
+       * @method (arg1, arg2)
+       * @public
+       * @param {String}      the event,
+       * @param {Function}    the event handler,
+       * @returns {Object}    returns this,
+       * @since 0.0.0
+       */
       subscribe(event, listener) {
         TM.subscribe(this._db, event, listener);
         return this;
