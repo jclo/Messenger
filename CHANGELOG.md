@@ -3,6 +3,7 @@
 ### 0.0.7 (August 18, 2020)
 
   * Added the method whoami,
+  * Added the missing test files,
   * ...,
 
 
