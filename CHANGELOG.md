@@ -3,7 +3,7 @@
 ### 1.0.0 (August 28, 2020)
 
   * Updated the project dependencies,
-  * ...,
+  * Release.
 
 
 ### 0.0.7 (August 18, 2020)
