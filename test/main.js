@@ -1,19 +1,16 @@
 // ESLint declarations:
-/* global describe, it */
-/* eslint one-var: 0, no-unused-vars: 0, semi-style: 0, no-underscore-dangle: 0 */
+/* global describe */
+/* eslint one-var: 0, semi-style: 0 */
 
 'use strict';
 
 // -- Vendor Modules
-const should     = require('chai').should()
-    , { expect } = require('chai')
-    ;
 
 
 // -- Local Modules
-const Messenger = require('../index')
-    , pack   = require('../package.json')
-    , testlib = require('./int/lib')
+const Messenger      = require('../index.js')
+    , pack           = require('../package.json')
+    , testlib        = require('./int/lib')
     , testsubandfire = require('./int/subandfire')
     ;
 

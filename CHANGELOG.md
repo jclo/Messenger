@@ -1,5 +1,11 @@
 ### HEAD
 
+### 1.0.0 (August 28, 2020)
+
+  * Updated the project dependencies,
+  * ...,
+
+
 ### 0.0.7 (August 18, 2020)
 
   * Added the method whoami,
