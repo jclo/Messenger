@@ -79,7 +79,7 @@ Messenger.noConflict();
 [npm-url]: https://www.npmjs.com/package/@mobilabs/messenger
 [release-url]: https://github.com/jclo/messenger/tags
 [commit-url]: https://github.com/jclo/messenger/commits/master
-[travis-url]: https://travis-ci.org/jclo/messenger
+[travis-url]: https://travis-ci.com/jclo/messenger
 [coveralls-url]: https://coveralls.io/github/jclo/messenger?branch=master
 [dependencies-url]: https://david-dm.org/jclo/messenger
 [devdependencies-url]: https://david-dm.org/jclo/messenger?type=dev

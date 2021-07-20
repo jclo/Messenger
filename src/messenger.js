@@ -117,8 +117,8 @@
    * (must not be deleted)
    *
    * Nota:
-   * Running Messenger in noConflict mode, returns the Messenger variable to its
-   * _ previous owner.
+   * Running Messenger in noConflict mode, returns the Messenger variable to
+   * its previous owner.
    *
    * @method ()
    * @public

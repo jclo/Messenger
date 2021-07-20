@@ -8,7 +8,7 @@
 
 
 // -- Local Modules
-const Messenger      = require('../index.js')
+const Messenger      = require('../index')
     , pack           = require('../package.json')
     , testlib        = require('./int/lib')
     , testsubandfire = require('./int/subandfire')
@@ -24,6 +24,6 @@ const libname = 'Messenger';
 
 // -- Main
 describe('Test Messenger:', () => {
-  testlib(Messenger, libname, pack.version);
+  testlib(Messenger, libname, pack.version, 'without new');
   testsubandfire(Messenger);
 });
