@@ -1,12 +1,12 @@
 /*! ****************************************************************************
- * Messenger v1.0.2
+ * Messenger v1.0.3
  *
  * A tiny Javascript library to handle messages that carry a payload.
  * (you can download it from npm or github repositories)
- * Copyright (c) 2021 Mobilabs <contact@mobilabs.fr> (http://www.mobilabs.fr).
+ * Copyright (c) 2022 Mobilabs <contact@mobilabs.fr> (http://www.mobilabs.fr).
  * Released under the MIT license. You may obtain a copy of the License
  * at: http://www.opensource.org/licenses/mit-license.php).
- * Built from ES6lib v1.0.12.
+ * Built from ES6lib v1.0.13.
  * ************************************************************************** */
 // ESLint declarations
 /* global define */
@@ -127,7 +127,7 @@ const $__ES6GLOB = {};
       const obj = Object.create(methods);
       obj._library = {
         name: 'Messenger',
-        version: '1.0.2',
+        version: '1.0.3',
       };
       // Initializes the message database to empty:
       obj._db = {};
@@ -136,7 +136,7 @@ const $__ES6GLOB = {};
 
     // Attaches constants to Messenger that provide name and version of the lib.
     Messenger.NAME = 'Messenger';
-    Messenger.VERSION = '1.0.2';
+    Messenger.VERSION = '1.0.3';
 
 
     // -- Private Static Methods -----------------------------------------------
