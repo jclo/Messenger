@@ -29,12 +29,17 @@ module.exports = {
   index: './index.js',
   distlink: `./_dist/lib/${name}.js`,
 
-  // These are the Javascript files required to build the library.
+  // These are the Javascript files required to build the library. Choose one
+  // pattern among these ones. The library can include only the header file,
+  // a core file and the footer file. The files 'basic.js', 'functional.js',
+  // 'functional-shared.js', 'prototypal.js', 'pseudoclassical.js' and
+  // 'pseudoclassical-auto.js' are mutually exclusives.
   /* eslint-disable no-multi-spaces */
   src: [
-    // These two files (_header and _head.js) must be declared
+    // These three files (_header, _head.js and extend.js) must be declared
     // in this order as they create the umd module, define the global
-    // constants/variables and the object tree.
+    // constants/variables, the object tree and the function to fill
+    // the tree!
     './src/_header',
     './src/_head.js',
 
@@ -46,6 +51,12 @@ module.exports = {
   ],
   /* eslint-enable no-multi-spaces */
 
+  webfiles: [
+    // These are the files to copy to the root path of the web app,
+    './README.md',
+    './LICENSE.md',
+  ],
+
   get license() {
     return ['/*! ****************************************************************************',
       ` * ${libname} v${pack.version}`,
@@ -55,7 +66,7 @@ module.exports = {
       ` * Copyright (c) ${(new Date()).getFullYear()} ${pack.author.name} <${pack.author.email}> (${pack.author.url}).`,
       ' * Released under the MIT license. You may obtain a copy of the License',
       ' * at: http://www.opensource.org/licenses/mit-license.php).',
-      ' * Built from ES6lib v1.0.13.',
+      ' * Built from ES6lib v2.1.1.',
       ' * ************************************************************************** */',
       ''].join('\n');
   },
